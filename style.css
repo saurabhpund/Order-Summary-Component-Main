@@ -25,7 +25,7 @@ body, .img-container {
   display: grid;
   font-family: "Red Hat Display" sans-serif;
   place-items: center;
-  background-image: url("/images/pattern-background-desktop.svg");
+  background-image: url("images/pattern-background-desktop.svg");
   background-repeat: no-repeat;
 }
 
