@@ -1,0 +1,195 @@
+@import url(https://fonts.googleapis.com/css?family=Red+Hat+Display:regular,italic,500,500italic,700,700italic,900,900italic);
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  --primaryPaleBlue: hsl(225, 100%, 94%);
+  --primaryBrightBlue: hsl(245, 75%, 52%);
+  --neutralVeryPaleBlue: hsl(225, 100%, 98%);
+  --neutralDesaturatedBlue: hsl(224, 23%, 55%);
+  --neutralDarkBlue: hsl(223, 47%, 23%);
+}
+
+body, .img-container {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.img-container {
+  display: -ms-grid;
+  display: grid;
+  font-family: "Red Hat Display" sans-serif;
+  place-items: center;
+  background-image: url("/images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+}
+
+.container {
+  width: 23rem;
+  height: 35rem;
+  border-radius: 15px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 15px 20px var(--primaryPaleBlue);
+          box-shadow: 0 15px 20px var(--primaryPaleBlue);
+}
+
+.card-img {
+  width: 100%;
+  height: 35%;
+  overflow: hidden;
+}
+
+.card-img img {
+  width: inherit;
+  height: 100%;
+}
+
+.card {
+  height: 65%;
+  background: #fff;
+  padding: 0 2rem;
+}
+
+.card .head {
+  padding: 1.5rem 0;
+  width: 100%;
+  text-align: center;
+  color: var(--neutralDarkBlue);
+}
+
+.card p {
+  font-size: 16px;
+  text-align: center;
+  color: var(--neutralDarkBlue);
+  font-weight: 100;
+}
+
+.card .plan {
+  background-color: var(--neutralVeryPaleBlue);
+  border-radius: 10px;
+  width: 100%;
+  height: 4rem;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 1.5rem 0;
+}
+
+.card .plan p {
+  width: 50%;
+  text-align: left;
+  padding: 0.6rem 0;
+}
+
+.card .plan p strong {
+  color: var(--neutralDarkBlue);
+  font-weight: bold;
+}
+
+.card .plan p b {
+  margin: 5px 0;
+  color: var(--neutralDesaturatedBlue);
+}
+
+.card .plan img {
+  width: 2rem;
+  height: 2rem;
+  margin: 1rem;
+}
+
+.card .plan button {
+  width: 30%;
+  border: none;
+  background: none;
+  color: var(--primaryBrightBlue);
+  text-decoration: underline;
+}
+
+.card .payment {
+  width: 100%;
+  padding: 15px;
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+  font-weight: 700;
+  -webkit-box-shadow: 10px 15px 20px var(--neutralVeryPaleBlue);
+          box-shadow: 10px 15px 20px var(--neutralVeryPaleBlue);
+  background-color: var(--primaryBrightBlue);
+}
+
+.card .cancelOrder {
+  width: 100%;
+  margin: 1rem 0;
+  background: none;
+  font-weight: 800;
+  border: none;
+  outline: none;
+  color: var(--neutralDesaturatedBlue);
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.card .plan button:active {
+  text-decoration: none;
+  opacity: 0.60;
+}
+
+.card .cancelOrder:active {
+  color: var(--neutralDarkBlue);
+}
+
+.card .payment:active {
+  opacity: 0.70;
+}
+
+.card .plan button:active {
+  text-decoration: none;
+  opacity: .70;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+@media (max-width: 1440px) {
+  .container {
+    margin: 1rem 0;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 80%;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .container {
+    margin: 10px;
+    width: 23rem;
+    height: 33rem;
+  }
+  .card .head {
+    font-size: 1.5rem;
+  }
+  .card p {
+    padding: 0 20px;
+  }
+  .card-img {
+    background: url("/design/mobile-design.jpg");
+  }
+}
+/*# sourceMappingURL=style.css.map */
