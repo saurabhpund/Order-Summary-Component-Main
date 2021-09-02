@@ -188,8 +188,12 @@ button:hover {
   .card p {
     padding: 0 20px;
   }
-  .card-img {
-    background: url("/design/mobile-design.jpg");
+   .img-container{
+    background: url('/images/pattern-background-mobile.svg');
+      background-repeat: no-repeat;
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
   }
 }
 /*# sourceMappingURL=style.css.map */
