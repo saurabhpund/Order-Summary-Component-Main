@@ -178,9 +178,9 @@ button:hover {
 
 @media only screen and (mix-width: 375px) {
   .container {
-    margin: 10px;
+    margin: 15px 0;
     width: 23rem;
-    height: 33rem;
+    height: 95vh;
   }
   .card .head {
     font-size: 1.5rem;
